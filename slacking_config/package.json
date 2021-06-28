@@ -1,0 +1,34 @@
+{
+  "name": "slacking_config",
+  "version": "1.0.0",
+  "description": "Send AWS config notifications to a slack channel",
+  "main": "index.ts",
+  "scripts": {
+    "test": "env-cmd -f .env.test mocha --inspect=0.0.0.0:8080 --watch --extensions ts --watch-files src-ts,tests -r ts-node/register 'tests/**/*.ts' 'tests/*.ts' --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ancient87/slacking_config.git"
+  },
+  "keywords": [
+    "aws",
+    "config",
+    "compliance"
+  ],
+  "author": "Severin Gassauer-Fleissner <severin.gassauer@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Ancient87/slacking_config/issues"
+  },
+  "homepage": "https://github.com/Ancient87/slacking_config#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.19",
+    "typescript": "^4.3.4"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "env-cmd": "^10.1.0",
+    "mocha": "^9.0.1",
+    "ts-node": "^10.0.0"
+  }
+}
